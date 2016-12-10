@@ -1,0 +1,2359 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package jm1_1;
+
+import Animacion.Animacion;
+import java.awt.Image;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import jm.Dominio.Puntajes;
+import jmRepositorio.Jm1repository1;
+import jmRepositorio.PuntajesRepository;
+import org.netbeans.lib.awtextra.AbsoluteLayout;
+
+/**
+ *
+ * @author PC1
+ */
+public class Preguntas_n2 extends javax.swing.JFrame {
+    PuntajesRepository pu = new PuntajesRepository(); 
+    
+      boolean PrimeraPreguntas, SegundaPreguntas, TerceraPreguntas, CuartaPreguntas, QuintaPreguntas, Resultado;
+boolean pregu1, pregu2, pregu3, pregu4, resul2;
+boolean pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, resulta1;
+    /**
+     * Creates new form Preguntas_n2
+     */
+    public Preguntas_n2() {
+        initComponents();
+       /* ImageIcon imagen = new ImageIcon("src/Imagenes/orbs.gif");
+        Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(ImagP.getWidth(), ImagP.getHeight(), Image.SCALE_DEFAULT));
+        ImagP.setIcon(icono);
+        this.repaint();
+        dispose();
+        
+        ImageIcon imagen1 = new ImageIcon("src/ImagenesJuego/NIÑO-PENSANDO21-530x413.jpg");
+        Icon icono1 = new ImageIcon(imagen1.getImage().getScaledInstance(Image1.getWidth(), Image1.getHeight(), Image.SCALE_DEFAULT));
+        Image1.setIcon(icono1);
+        this.repaint();
+        
+        ImageIcon imagen2 = new ImageIcon("src/ImagenesJuego/nino-pensando.jpg");
+        Icon icono2 = new ImageIcon(imagen.getImage().getScaledInstance(Image2.getWidth(), Image2.getHeight(), Image.SCALE_DEFAULT));
+        Image2.setIcon(icono2);
+        this.repaint();
+        
+        ImageIcon imagen3 = new ImageIcon("src/ImagenesJuego/niños-pensando2.jpg");
+        Icon icono3 = new ImageIcon(imagen.getImage().getScaledInstance(Image3.getWidth(), Image3.getHeight(), Image.SCALE_DEFAULT));
+        Image3.setIcon(icono3);
+        this.repaint();
+        
+        ImageIcon imagen4 = new ImageIcon("src/ImagenesJuego/NIÑO-PENSANDO21-530x413.jpg");
+        Icon icono4 = new ImageIcon(imagen.getImage().getScaledInstance(Image4.getWidth(), Image4.getHeight(), Image.SCALE_DEFAULT));
+        Image4.setIcon(icono4);
+        this.repaint();
+        */
+          buttonGroup1.add(Correc1);
+          buttonGroup1.add(jRadioButton2);
+          buttonGroup1.add(jRadioButton3);
+          buttonGroup1.add(jRadioButton4);
+           
+            buttonGroup2.add(jRadioButton1);
+            buttonGroup2.add(Correc2);
+            buttonGroup2.add(jRadioButton5);
+            buttonGroup2.add(jRadioButton7);
+            
+            
+            buttonGroup3.add(jRadioButton6);
+            buttonGroup3.add(Correc3);
+            buttonGroup3.add(jRadioButton8);
+            buttonGroup3.add(jRadioButton9);
+            
+            buttonGroup4.add(Correc4);
+            buttonGroup4.add(jRadioButton10);
+            buttonGroup4.add(jRadioButton11);
+            buttonGroup4.add(jRadioButton12);
+            
+             buttonGroup5.add(Correct1);
+            buttonGroup5.add(jRadioButton13);
+            buttonGroup5.add(jRadioButton14);
+            buttonGroup5.add(jRadioButton15);
+            
+            buttonGroup6.add(Correct2);
+            buttonGroup6.add(jRadioButton16);
+            buttonGroup6.add(jRadioButton17);
+            buttonGroup6.add(jRadioButton18);
+            
+            buttonGroup7.add(Correct3);
+            buttonGroup7.add(jRadioButton19);
+            buttonGroup7.add(jRadioButton20);
+            buttonGroup7.add(jRadioButton21);
+            
+            buttonGroup8.add(jRadioButton22);
+            buttonGroup8.add(Correct4);
+            buttonGroup8.add(jRadioButton23);
+            buttonGroup8.add(jRadioButton24);
+            
+             buttonGroup9.add(jRadioButton25);
+            buttonGroup9.add(Correct5);
+            buttonGroup9.add(jRadioButton26);
+            buttonGroup9.add(jRadioButton27);
+           
+           buttonGroup10.add(A);
+        buttonGroup10.add(B);
+        buttonGroup10.add(C);
+        buttonGroup10.add(D);
+
+        buttonGroup11.add(A1);
+       buttonGroup11.add(B1);
+        buttonGroup11.add(C1);
+        buttonGroup11.add(D1);
+
+        buttonGroup12.add(A2);
+        buttonGroup12.add(C2);
+        buttonGroup12.add(B2);
+        buttonGroup12.add(D2);
+
+        buttonGroup13.add(C3);
+        buttonGroup13.add(B3);
+        buttonGroup13.add(E);
+        buttonGroup13.add(D3);
+
+        buttonGroup14.add(B4);
+        buttonGroup14.add(D4);
+        buttonGroup14.add(A3);
+        buttonGroup14.add(C4);
+            
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
+        buttonGroup4 = new javax.swing.ButtonGroup();
+        buttonGroup5 = new javax.swing.ButtonGroup();
+        buttonGroup6 = new javax.swing.ButtonGroup();
+        buttonGroup7 = new javax.swing.ButtonGroup();
+        buttonGroup8 = new javax.swing.ButtonGroup();
+        buttonGroup9 = new javax.swing.ButtonGroup();
+        buttonGroup10 = new javax.swing.ButtonGroup();
+        buttonGroup11 = new javax.swing.ButtonGroup();
+        buttonGroup12 = new javax.swing.ButtonGroup();
+        buttonGroup13 = new javax.swing.ButtonGroup();
+        buttonGroup14 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        PanelPrincipal = new javax.swing.JTabbedPane();
+        Bienvenidos = new javax.swing.JPanel();
+        PanelBase = new javax.swing.JPanel();
+        btnSI = new javax.swing.JButton();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        PrimeraPregunta = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        lblImagen = new javax.swing.JLabel();
+        A = new javax.swing.JRadioButton();
+        B = new javax.swing.JRadioButton();
+        C = new javax.swing.JRadioButton();
+        D = new javax.swing.JRadioButton();
+        btnSiguiente = new javax.swing.JButton();
+        SegundaPregunta = new javax.swing.JPanel();
+        lblImagen1 = new javax.swing.JLabel();
+        A1 = new javax.swing.JRadioButton();
+        B1 = new javax.swing.JRadioButton();
+        C1 = new javax.swing.JRadioButton();
+        D1 = new javax.swing.JRadioButton();
+        btnSiguiente1 = new javax.swing.JButton();
+        jLabel28 = new javax.swing.JLabel();
+        TerceraPregunta = new javax.swing.JPanel();
+        C2 = new javax.swing.JRadioButton();
+        B2 = new javax.swing.JRadioButton();
+        D2 = new javax.swing.JRadioButton();
+        jLabel29 = new javax.swing.JLabel();
+        lblImagen2 = new javax.swing.JLabel();
+        btnSiguiente2 = new javax.swing.JButton();
+        A2 = new javax.swing.JRadioButton();
+        CuartaPregunt = new javax.swing.JPanel();
+        lblImagen3 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        C3 = new javax.swing.JRadioButton();
+        B3 = new javax.swing.JRadioButton();
+        E = new javax.swing.JRadioButton();
+        D3 = new javax.swing.JRadioButton();
+        btnSiguiente3 = new javax.swing.JButton();
+        QuintaPregunt = new javax.swing.JPanel();
+        jLabel31 = new javax.swing.JLabel();
+        lblImagen4 = new javax.swing.JLabel();
+        A3 = new javax.swing.JRadioButton();
+        B4 = new javax.swing.JRadioButton();
+        C4 = new javax.swing.JRadioButton();
+        D4 = new javax.swing.JRadioButton();
+        btnSiguiente4 = new javax.swing.JButton();
+        Resultado1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        lblPuntaje = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        Preg1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        Image1 = new javax.swing.JLabel();
+        Correc1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jButton2 = new javax.swing.JButton();
+        Preg2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
+        Correc2 = new javax.swing.JRadioButton();
+        jRadioButton7 = new javax.swing.JRadioButton();
+        jButton3 = new javax.swing.JButton();
+        Image2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        Preg3 = new javax.swing.JPanel();
+        Correc3 = new javax.swing.JRadioButton();
+        jRadioButton8 = new javax.swing.JRadioButton();
+        jRadioButton9 = new javax.swing.JRadioButton();
+        jButton4 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        Image3 = new javax.swing.JLabel();
+        jRadioButton6 = new javax.swing.JRadioButton();
+        Preg4 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        Image4 = new javax.swing.JLabel();
+        jRadioButton10 = new javax.swing.JRadioButton();
+        Correc4 = new javax.swing.JRadioButton();
+        jRadioButton11 = new javax.swing.JRadioButton();
+        jRadioButton12 = new javax.swing.JRadioButton();
+        Resultados2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        lblPuntaje1 = new javax.swing.JLabel();
+        btnfinish = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        Pregunta1 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        Imagen1 = new javax.swing.JLabel();
+        jRadioButton13 = new javax.swing.JRadioButton();
+        jRadioButton14 = new javax.swing.JRadioButton();
+        jRadioButton15 = new javax.swing.JRadioButton();
+        Correct1 = new javax.swing.JRadioButton();
+        jButton6 = new javax.swing.JButton();
+        Pregunta2 = new javax.swing.JPanel();
+        Imagen2 = new javax.swing.JLabel();
+        Correct2 = new javax.swing.JRadioButton();
+        jRadioButton16 = new javax.swing.JRadioButton();
+        jRadioButton17 = new javax.swing.JRadioButton();
+        jRadioButton18 = new javax.swing.JRadioButton();
+        jButton7 = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        Pregunta3 = new javax.swing.JPanel();
+        jRadioButton19 = new javax.swing.JRadioButton();
+        Correct3 = new javax.swing.JRadioButton();
+        jRadioButton20 = new javax.swing.JRadioButton();
+        jButton8 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        Imagen3 = new javax.swing.JLabel();
+        jRadioButton21 = new javax.swing.JRadioButton();
+        Pregunta4 = new javax.swing.JPanel();
+        jButton9 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        Imagen4 = new javax.swing.JLabel();
+        Correct4 = new javax.swing.JRadioButton();
+        jRadioButton22 = new javax.swing.JRadioButton();
+        jRadioButton23 = new javax.swing.JRadioButton();
+        jRadioButton24 = new javax.swing.JRadioButton();
+        Pregunta5 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        Imagen5 = new javax.swing.JLabel();
+        jRadioButton25 = new javax.swing.JRadioButton();
+        jRadioButton26 = new javax.swing.JRadioButton();
+        Correct5 = new javax.swing.JRadioButton();
+        jRadioButton27 = new javax.swing.JRadioButton();
+        jButton10 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        Resultado3 = new javax.swing.JPanel();
+        btnfinish1 = new javax.swing.JButton();
+        lblPuntaje2 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        PanelPrincipal.setBackground(new java.awt.Color(153, 255, 255));
+
+        PanelBase.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSI.setBackground(new java.awt.Color(0, 0, 255));
+        btnSI.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        btnSI.setForeground(new java.awt.Color(0, 0, 255));
+        btnSI.setText("INICIAR");
+        btnSI.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
+        btnSI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSIActionPerformed(evt);
+            }
+        });
+        PanelBase.add(btnSI, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 200, 50));
+
+        jLabel26.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel26.setText("BIENVENIDOS");
+        PanelBase.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 70, 190, 60));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/preloader.gif"))); // NOI18N
+        PanelBase.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 500));
+
+        javax.swing.GroupLayout BienvenidosLayout = new javax.swing.GroupLayout(Bienvenidos);
+        Bienvenidos.setLayout(BienvenidosLayout);
+        BienvenidosLayout.setHorizontalGroup(
+            BienvenidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 660, Short.MAX_VALUE)
+            .addGroup(BienvenidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BienvenidosLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(PanelBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        BienvenidosLayout.setVerticalGroup(
+            BienvenidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 529, Short.MAX_VALUE)
+            .addGroup(BienvenidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BienvenidosLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(PanelBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        PanelPrincipal.addTab("tab13", Bienvenidos);
+
+        PrimeraPregunta.setBackground(new java.awt.Color(204, 255, 255));
+
+        jLabel27.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel27.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel27.setText("SELECCIONE A SECUENCIA CORRESPONDIENTE");
+
+        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/raz2.jpg"))); // NOI18N
+        lblImagen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        A.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        A.setForeground(new java.awt.Color(0, 0, 255));
+        A.setSelected(true);
+        A.setText("A");
+        A.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        B.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        B.setForeground(new java.awt.Color(0, 0, 255));
+        B.setText("B");
+        B.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BActionPerformed(evt);
+            }
+        });
+
+        C.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        C.setForeground(new java.awt.Color(0, 0, 255));
+        C.setText("C");
+        C.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CActionPerformed(evt);
+            }
+        });
+
+        D.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        D.setForeground(new java.awt.Color(0, 0, 255));
+        D.setText("NINGUNA DE LAS ANTERIORES");
+        D.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        btnSiguiente.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        btnSiguiente.setText("SIGUIENTE");
+        btnSiguiente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PrimeraPreguntaLayout = new javax.swing.GroupLayout(PrimeraPregunta);
+        PrimeraPregunta.setLayout(PrimeraPreguntaLayout);
+        PrimeraPreguntaLayout.setHorizontalGroup(
+            PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PrimeraPreguntaLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PrimeraPreguntaLayout.createSequentialGroup()
+                        .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PrimeraPreguntaLayout.createSequentialGroup()
+                        .addGroup(PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(A)
+                            .addComponent(C))
+                        .addGap(193, 193, 193)
+                        .addGroup(PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(D)
+                            .addComponent(B))
+                        .addGap(33, 33, 33))))
+            .addGroup(PrimeraPreguntaLayout.createSequentialGroup()
+                .addGroup(PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PrimeraPreguntaLayout.createSequentialGroup()
+                        .addGap(145, 145, 145)
+                        .addComponent(jLabel27))
+                    .addGroup(PrimeraPreguntaLayout.createSequentialGroup()
+                        .addGap(262, 262, 262)
+                        .addComponent(lblImagen)))
+                .addContainerGap(166, Short.MAX_VALUE))
+        );
+        PrimeraPreguntaLayout.setVerticalGroup(
+            PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PrimeraPreguntaLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addGroup(PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(A)
+                    .addComponent(B, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PrimeraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(D)
+                    .addComponent(C))
+                .addGap(26, 26, 26)
+                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+        );
+
+        PanelPrincipal.addTab("tab12", PrimeraPregunta);
+
+        SegundaPregunta.setBackground(new java.awt.Color(204, 255, 255));
+
+        lblImagen1.setForeground(new java.awt.Color(240, 240, 240));
+        lblImagen1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/analogias graficas 90.png"))); // NOI18N
+        lblImagen1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        A1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        A1.setForeground(new java.awt.Color(0, 0, 255));
+        A1.setSelected(true);
+        A1.setText("A");
+        A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        B1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        B1.setForeground(new java.awt.Color(0, 0, 255));
+        B1.setText("B");
+        B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        C1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        C1.setForeground(new java.awt.Color(0, 0, 255));
+        C1.setText("C");
+        C1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        D1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        D1.setForeground(new java.awt.Color(0, 0, 255));
+        D1.setText("D");
+        D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        btnSiguiente1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        btnSiguiente1.setText("SIGUIENTE");
+        btnSiguiente1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnSiguiente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente1ActionPerformed(evt);
+            }
+        });
+
+        jLabel28.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel28.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel28.setText("SELECCIONE LA RESPUESTA CORRECTA");
+
+        javax.swing.GroupLayout SegundaPreguntaLayout = new javax.swing.GroupLayout(SegundaPregunta);
+        SegundaPregunta.setLayout(SegundaPreguntaLayout);
+        SegundaPreguntaLayout.setHorizontalGroup(
+            SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SegundaPreguntaLayout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addGroup(SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SegundaPreguntaLayout.createSequentialGroup()
+                        .addComponent(btnSiguiente1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SegundaPreguntaLayout.createSequentialGroup()
+                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(167, 167, 167))))
+            .addGroup(SegundaPreguntaLayout.createSequentialGroup()
+                .addGroup(SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SegundaPreguntaLayout.createSequentialGroup()
+                        .addGap(210, 210, 210)
+                        .addGroup(SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(A1)
+                            .addComponent(B1))
+                        .addGap(154, 154, 154)
+                        .addGroup(SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(D1)
+                            .addComponent(C1)))
+                    .addGroup(SegundaPreguntaLayout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(lblImagen1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(88, 88, 88))
+        );
+        SegundaPreguntaLayout.setVerticalGroup(
+            SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SegundaPreguntaLayout.createSequentialGroup()
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblImagen1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addGroup(SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(SegundaPreguntaLayout.createSequentialGroup()
+                        .addComponent(btnSiguiente1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28))
+                    .addGroup(SegundaPreguntaLayout.createSequentialGroup()
+                        .addGroup(SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(C1)
+                            .addComponent(A1))
+                        .addGap(18, 18, 18)
+                        .addGroup(SegundaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(D1)
+                            .addComponent(B1))
+                        .addGap(74, 74, 74))))
+        );
+
+        PanelPrincipal.addTab("tab14", SegundaPregunta);
+
+        TerceraPregunta.setBackground(new java.awt.Color(204, 255, 255));
+
+        C2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        C2.setForeground(new java.awt.Color(0, 0, 255));
+        C2.setText("C");
+        C2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        B2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        B2.setForeground(new java.awt.Color(0, 0, 255));
+        B2.setText("B");
+        B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        D2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        D2.setForeground(new java.awt.Color(0, 0, 255));
+        D2.setText("D");
+        D2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jLabel29.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel29.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel29.setText("SELECCIONE LA RESPUESTA CORRECTA");
+
+        lblImagen2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/ejercicio razonamiento abstracto 7.png"))); // NOI18N
+        lblImagen2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        btnSiguiente2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        btnSiguiente2.setText("SIGUIENTE");
+        btnSiguiente2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnSiguiente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente2ActionPerformed(evt);
+            }
+        });
+
+        A2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        A2.setForeground(new java.awt.Color(0, 0, 255));
+        A2.setSelected(true);
+        A2.setText("A");
+        A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        javax.swing.GroupLayout TerceraPreguntaLayout = new javax.swing.GroupLayout(TerceraPregunta);
+        TerceraPregunta.setLayout(TerceraPreguntaLayout);
+        TerceraPreguntaLayout.setHorizontalGroup(
+            TerceraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TerceraPreguntaLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnSiguiente2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57))
+            .addGroup(TerceraPreguntaLayout.createSequentialGroup()
+                .addGroup(TerceraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TerceraPreguntaLayout.createSequentialGroup()
+                        .addGap(167, 167, 167)
+                        .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(TerceraPreguntaLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(lblImagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(TerceraPreguntaLayout.createSequentialGroup()
+                        .addGap(217, 217, 217)
+                        .addGroup(TerceraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(C2)
+                            .addComponent(A2))
+                        .addGap(160, 160, 160)
+                        .addGroup(TerceraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(B2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(D2, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addContainerGap(73, Short.MAX_VALUE))
+        );
+        TerceraPreguntaLayout.setVerticalGroup(
+            TerceraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TerceraPreguntaLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblImagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addGroup(TerceraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(A2)
+                    .addComponent(B2))
+                .addGap(17, 17, 17)
+                .addGroup(TerceraPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(C2)
+                    .addComponent(D2))
+                .addGap(4, 4, 4)
+                .addComponent(btnSiguiente2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+        );
+
+        PanelPrincipal.addTab("tab15", TerceraPregunta);
+
+        CuartaPregunt.setBackground(new java.awt.Color(204, 255, 255));
+
+        lblImagen3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/razonamiento abstracto 02.png"))); // NOI18N
+        lblImagen3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jLabel30.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel30.setText("CUAL SECUENCIA NO CORRESPONDE A LA FIGURA");
+
+        C3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        C3.setForeground(new java.awt.Color(0, 0, 255));
+        C3.setText("C");
+        C3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        B3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        B3.setForeground(new java.awt.Color(0, 0, 255));
+        B3.setSelected(true);
+        B3.setText("TODAS SON CORRECTAS");
+        B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        E.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        E.setForeground(new java.awt.Color(0, 0, 255));
+        E.setText("E");
+        E.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        D3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        D3.setForeground(new java.awt.Color(0, 0, 255));
+        D3.setText("D");
+        D3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        btnSiguiente3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        btnSiguiente3.setText("SIGUIENTE");
+        btnSiguiente3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnSiguiente3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CuartaPreguntLayout = new javax.swing.GroupLayout(CuartaPregunt);
+        CuartaPregunt.setLayout(CuartaPreguntLayout);
+        CuartaPreguntLayout.setHorizontalGroup(
+            CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CuartaPreguntLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CuartaPreguntLayout.createSequentialGroup()
+                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(134, 134, 134))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CuartaPreguntLayout.createSequentialGroup()
+                        .addGroup(CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(E, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(C3, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(151, 151, 151)
+                        .addGroup(CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(B3)
+                            .addComponent(D3))
+                        .addGap(95, 95, 95))))
+            .addGroup(CuartaPreguntLayout.createSequentialGroup()
+                .addGroup(CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CuartaPreguntLayout.createSequentialGroup()
+                        .addGap(508, 508, 508)
+                        .addComponent(btnSiguiente3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(CuartaPreguntLayout.createSequentialGroup()
+                        .addGap(163, 163, 163)
+                        .addComponent(lblImagen3)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CuartaPreguntLayout.setVerticalGroup(
+            CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CuartaPreguntLayout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(lblImagen3, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54)
+                .addGroup(CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(D3)
+                    .addComponent(C3))
+                .addGap(18, 18, 18)
+                .addGroup(CuartaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(B3)
+                    .addComponent(E))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addComponent(btnSiguiente3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25))
+        );
+
+        PanelPrincipal.addTab("tab16", CuartaPregunt);
+
+        QuintaPregunt.setBackground(new java.awt.Color(204, 255, 255));
+
+        jLabel31.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel31.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel31.setText("SELECCIONE A SECUENCIA CORRESPONDIENTE");
+
+        lblImagen4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/analogia-poker.jpg"))); // NOI18N
+        lblImagen4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        A3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        A3.setForeground(new java.awt.Color(0, 0, 255));
+        A3.setSelected(true);
+        A3.setText("A");
+        A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        B4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        B4.setForeground(new java.awt.Color(0, 0, 255));
+        B4.setText("B");
+        B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        B4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B4ActionPerformed(evt);
+            }
+        });
+
+        C4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        C4.setForeground(new java.awt.Color(0, 0, 255));
+        C4.setText("C");
+        C4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        C4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C4ActionPerformed(evt);
+            }
+        });
+
+        D4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        D4.setForeground(new java.awt.Color(0, 0, 255));
+        D4.setText("NINGUNA DE LAS ANTERIORES");
+        D4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        btnSiguiente4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        btnSiguiente4.setText("SIGUIENTE");
+        btnSiguiente4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnSiguiente4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnSiguiente4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout QuintaPreguntLayout = new javax.swing.GroupLayout(QuintaPregunt);
+        QuintaPregunt.setLayout(QuintaPreguntLayout);
+        QuintaPreguntLayout.setHorizontalGroup(
+            QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuintaPreguntLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuintaPreguntLayout.createSequentialGroup()
+                        .addComponent(btnSiguiente4, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuintaPreguntLayout.createSequentialGroup()
+                        .addGroup(QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(A3)
+                            .addComponent(C4))
+                        .addGap(193, 193, 193)
+                        .addGroup(QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(D4)
+                            .addComponent(B4))
+                        .addGap(33, 33, 33))))
+            .addGroup(QuintaPreguntLayout.createSequentialGroup()
+                .addGroup(QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(QuintaPreguntLayout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addComponent(lblImagen4, javax.swing.GroupLayout.PREFERRED_SIZE, 468, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(QuintaPreguntLayout.createSequentialGroup()
+                        .addGap(142, 142, 142)
+                        .addComponent(jLabel31)))
+                .addContainerGap(111, Short.MAX_VALUE))
+        );
+        QuintaPreguntLayout.setVerticalGroup(
+            QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(QuintaPreguntLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblImagen4, javax.swing.GroupLayout.PREFERRED_SIZE, 337, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(A3)
+                    .addComponent(B4, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(QuintaPreguntLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(D4)
+                    .addComponent(C4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSiguiente4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+        );
+
+        PanelPrincipal.addTab("tab17", QuintaPregunt);
+
+        Resultado1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton1.setText("IR A NIVEL 2");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        Resultado1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, 110, 30));
+
+        lblPuntaje.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        lblPuntaje.setForeground(new java.awt.Color(255, 255, 255));
+        lblPuntaje.setText("SU PUNTAJE ES : ");
+        lblPuntaje.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Resultado1.add(lblPuntaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 450, -1));
+
+        jLabel32.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("RESULTALDOS PRIMER NIVEL");
+        jLabel32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Resultado1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 380, 30));
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/preloader.gif"))); // NOI18N
+        jLabel33.setText("jLabel33");
+        Resultado1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 530));
+
+        PanelPrincipal.addTab("tab18", Resultado1);
+
+        Preg1.setBackground(new java.awt.Color(204, 255, 255));
+        Preg1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel1.setText("CUAL ES EL SINONIMO DE LA PALABRA VIGILIA");
+        Preg1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 57, -1, 29));
+
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel2.setText("SELECCIONE LA RESPUESTA CORRECTA");
+        Preg1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 22, -1, 29));
+
+        Image1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/NIÑO-PENSANDO21-530x413-300x233.jpg"))); // NOI18N
+        Image1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg1.add(Image1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 300, 208));
+
+        Correc1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correc1.setForeground(new java.awt.Color(0, 0, 255));
+        Correc1.setText("A) DESVELO");
+        Correc1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Correc1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correc1ActionPerformed(evt);
+            }
+        });
+        Preg1.add(Correc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 363, -1, -1));
+
+        jRadioButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton2.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton2.setText("B) PRESTAMO");
+        jRadioButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 402, -1, -1));
+
+        jRadioButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton3.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton3.setText("C) PREOCUPACION");
+        jRadioButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 363, -1, -1));
+
+        jRadioButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton4.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton4.setText("D) ATENCION");
+        jRadioButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton4ActionPerformed(evt);
+            }
+        });
+        Preg1.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 402, -1, -1));
+
+        jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton2.setText("SIGUIENTE");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        Preg1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, 87, 33));
+
+        PanelPrincipal.addTab("Preg1", Preg1);
+
+        Preg2.setBackground(new java.awt.Color(204, 255, 255));
+        Preg2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel4.setText("CUAL ES EL SINONIMO DE LA PALABRA ACERBO");
+        Preg2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 55, -1, 29));
+
+        jRadioButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton1.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton1.setText("A) MENUDENCIA");
+        jRadioButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(164, 371, -1, -1));
+
+        jRadioButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton5.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton5.setText("C) FLECO");
+        jRadioButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg2.add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 371, -1, -1));
+
+        Correc2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correc2.setForeground(new java.awt.Color(0, 0, 255));
+        Correc2.setText("B) AMARGO");
+        Correc2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Correc2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correc2ActionPerformed(evt);
+            }
+        });
+        Preg2.add(Correc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(164, 410, -1, -1));
+
+        jRadioButton7.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton7.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton7.setText("D) INDIGNADO");
+        jRadioButton7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg2.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 410, -1, -1));
+
+        jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton3.setText("SIGUIENTE");
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        Preg2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(492, 449, 113, 30));
+
+        Image2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/nino-pensando.jpg"))); // NOI18N
+        Image2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg2.add(Image2, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 95, 490, 214));
+
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel3.setText("SELECCIONE LA RESPUESTA CORRECTA");
+        Preg2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 20, -1, 29));
+
+        PanelPrincipal.addTab("Preg2", Preg2);
+
+        Preg3.setBackground(new java.awt.Color(204, 255, 255));
+        Preg3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Correc3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correc3.setForeground(new java.awt.Color(0, 0, 255));
+        Correc3.setText("B) EL CONTEXTO");
+        Correc3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Correc3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correc3ActionPerformed(evt);
+            }
+        });
+        Preg3.add(Correc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 403, -1, -1));
+
+        jRadioButton8.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton8.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton8.setText("C) MENSAJE");
+        jRadioButton8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg3.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 364, -1, -1));
+
+        jRadioButton9.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton9.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton9.setText("D) EL CANAL");
+        jRadioButton9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg3.add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 403, -1, -1));
+
+        jButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton4.setText("SIGUIENTE");
+        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        Preg3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(491, 435, 113, 37));
+
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel7.setText("PEDRO HABLA QUECHUA Y JOSE FRANCES, AMBOS NO SE ENTIENDEN ");
+        Preg3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 23, -1, 30));
+
+        jLabel11.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel11.setText(" ¿QUE HA FALLADO?");
+        Preg3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 64, 160, 27));
+
+        Image3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/niños-pensando2.jpg"))); // NOI18N
+        Image3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg3.add(Image3, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 109, 490, 214));
+
+        jRadioButton6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton6.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton6.setText("A) EL CODIGO");
+        jRadioButton6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg3.add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 364, -1, -1));
+
+        PanelPrincipal.addTab("Preg3", Preg3);
+
+        Preg4.setBackground(new java.awt.Color(204, 255, 255));
+        Preg4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton5.setText("SIGUIENTE");
+        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        Preg4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 430, 113, 37));
+
+        jLabel8.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel8.setText("CUAL DE LAS SIGUIENTES ORACIONES ES BIMEMBRE");
+        Preg4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 43, -1, 30));
+
+        Image4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/pensar (1)_thumb.jpg"))); // NOI18N
+        Image4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Preg4.add(Image4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 210, 214));
+
+        jRadioButton10.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
+        jRadioButton10.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton10.setText("A) HABIA ERRORES EN EL TEXTO");
+        jRadioButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton10ActionPerformed(evt);
+            }
+        });
+        Preg4.add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 344, -1, -1));
+
+        Correc4.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
+        Correc4.setForeground(new java.awt.Color(0, 0, 255));
+        Correc4.setText("B) LLOVIO TODA LA NOCHE");
+        Correc4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Correc4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correc4ActionPerformed(evt);
+            }
+        });
+        Preg4.add(Correc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 379, -1, -1));
+
+        jRadioButton11.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
+        jRadioButton11.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton11.setText("D) SE ALQUILA CUARTOS");
+        jRadioButton11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jRadioButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton11ActionPerformed(evt);
+            }
+        });
+        Preg4.add(jRadioButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(335, 379, -1, -1));
+
+        jRadioButton12.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
+        jRadioButton12.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton12.setText("C) EN LIMA LE ENTREGO SUS BIENES");
+        jRadioButton12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jRadioButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton12ActionPerformed(evt);
+            }
+        });
+        Preg4.add(jRadioButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(335, 344, -1, -1));
+
+        PanelPrincipal.addTab("Preg4", Preg4);
+
+        Resultados2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("RESULTALDOS SEGUNDO NIVEL");
+        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Resultados2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, -1, -1));
+
+        lblPuntaje1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblPuntaje1.setForeground(new java.awt.Color(255, 255, 255));
+        lblPuntaje1.setText("SU PUNTAJE ES : ");
+        lblPuntaje1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        lblPuntaje1.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+                lblPuntaje1AncestorMoved(evt);
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        Resultados2.add(lblPuntaje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 490, -1));
+
+        btnfinish.setText("IR AL NIVEL 3");
+        btnfinish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 255)));
+        btnfinish.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnfinishActionPerformed(evt);
+            }
+        });
+        Resultados2.add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 410, 120, 40));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/preloader.gif"))); // NOI18N
+        Resultados2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 510));
+
+        PanelPrincipal.addTab("Resul", Resultados2);
+
+        Pregunta1.setBackground(new java.awt.Color(204, 255, 255));
+
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel9.setText("DE UN GRUPO DE 60 ESTUDIANTES LA TRECEAVA PARTE DE LOS VARONES ");
+
+        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel10.setText("SON GORDITOS, SI SE SABE QUE LOS VARONES SO MAYORIA. CUANTOS ");
+
+        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel12.setText("GORDITOS HAY EN EL GRUPO,SABIENDO QUE HAY MAS DE 10 MUJERES");
+
+        Imagen1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/clase.jpg"))); // NOI18N
+        Imagen1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton13.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton13.setText("A) 13");
+        jRadioButton13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
+
+        jRadioButton14.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton14.setText("B) 5");
+        jRadioButton14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
+
+        jRadioButton15.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton15.setText("C) 10");
+        jRadioButton15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
+
+        Correct1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correct1.setText("D) 6");
+        Correct1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
+        Correct1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correct1ActionPerformed(evt);
+            }
+        });
+
+        jButton6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton6.setText("SIGUIENTE");
+        jButton6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Pregunta1Layout = new javax.swing.GroupLayout(Pregunta1);
+        Pregunta1.setLayout(Pregunta1Layout);
+        Pregunta1Layout.setHorizontalGroup(
+            Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta1Layout.createSequentialGroup()
+                .addGroup(Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pregunta1Layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addGroup(Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10)
+                            .addGroup(Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel12)
+                                .addComponent(Imagen1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(Pregunta1Layout.createSequentialGroup()
+                        .addGap(207, 207, 207)
+                        .addGroup(Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton13)
+                            .addComponent(jRadioButton14))
+                        .addGap(127, 127, 127)
+                        .addGroup(Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Correct1)
+                            .addComponent(jRadioButton15))))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        Pregunta1Layout.setVerticalGroup(
+            Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta1Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(Imagen1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addGroup(Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton13)
+                    .addComponent(jRadioButton15))
+                .addGap(18, 18, 18)
+                .addGroup(Pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton14)
+                    .addComponent(Correct1))
+                .addGap(18, 18, 18)
+                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        PanelPrincipal.addTab("Pregunta1", Pregunta1);
+
+        Pregunta2.setBackground(new java.awt.Color(204, 255, 255));
+
+        Imagen2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/PENSAR.jpg"))); // NOI18N
+        Imagen2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        Correct2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correct2.setText("A) 50");
+        Correct2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Correct2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correct2ActionPerformed(evt);
+            }
+        });
+
+        jRadioButton16.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton16.setText("C) NINGUNA");
+        jRadioButton16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jRadioButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton16ActionPerformed(evt);
+            }
+        });
+
+        jRadioButton17.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton17.setText("B) 70");
+        jRadioButton17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton18.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton18.setText("D) 85");
+        jRadioButton18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jButton7.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton7.setText("SIGUIENTE");
+        jButton7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel13.setText("HALLE EL VALOR DELA SIGUIENTE OPERACION 99-97+95-93...+7-5+3-1");
+
+        javax.swing.GroupLayout Pregunta2Layout = new javax.swing.GroupLayout(Pregunta2);
+        Pregunta2.setLayout(Pregunta2Layout);
+        Pregunta2Layout.setHorizontalGroup(
+            Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta2Layout.createSequentialGroup()
+                .addGroup(Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pregunta2Layout.createSequentialGroup()
+                        .addGap(150, 150, 150)
+                        .addGroup(Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Correct2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jRadioButton17))
+                        .addGap(187, 187, 187)
+                        .addGroup(Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton16)
+                            .addComponent(jRadioButton18)))
+                    .addGroup(Pregunta2Layout.createSequentialGroup()
+                        .addGap(161, 161, 161)
+                        .addComponent(Imagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta2Layout.createSequentialGroup()
+                .addContainerGap(62, Short.MAX_VALUE)
+                .addGroup(Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta2Layout.createSequentialGroup()
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta2Layout.createSequentialGroup()
+                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(78, 78, 78))))
+        );
+        Pregunta2Layout.setVerticalGroup(
+            Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta2Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(Imagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addGroup(Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Correct2)
+                    .addComponent(jRadioButton16))
+                .addGap(18, 18, 18)
+                .addGroup(Pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton18)
+                    .addComponent(jRadioButton17))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+
+        PanelPrincipal.addTab("Pregunta2", Pregunta2);
+
+        Pregunta3.setBackground(new java.awt.Color(204, 255, 255));
+
+        jRadioButton19.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton19.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton19.setText("B) 6");
+
+        Correct3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correct3.setForeground(new java.awt.Color(0, 0, 255));
+        Correct3.setText("C) 3");
+        Correct3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correct3ActionPerformed(evt);
+            }
+        });
+
+        jRadioButton20.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton20.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton20.setText("D) 9");
+
+        jButton8.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton8.setText("SIGUIENTE");
+        jButton8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel14.setText("CADA UNA DE LAS CAJAS CONTIENE 9 CANICAS. ¿CUAL ES EL MENOR");
+
+        jLabel15.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel15.setText("NUMERO DE CANICAS QUE DEBEN SER TRASLADADAS DE UNA CAJA A OTRA");
+
+        jLabel16.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel16.setText("PARA QUE LA RELACION ENTRE X,Y,Z. SEA COMO 4,3,2?");
+
+        Imagen3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/esquema.png"))); // NOI18N
+        Imagen3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton21.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton21.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton21.setText("A) 5");
+
+        javax.swing.GroupLayout Pregunta3Layout = new javax.swing.GroupLayout(Pregunta3);
+        Pregunta3.setLayout(Pregunta3Layout);
+        Pregunta3Layout.setHorizontalGroup(
+            Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta3Layout.createSequentialGroup()
+                .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pregunta3Layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(Pregunta3Layout.createSequentialGroup()
+                        .addGap(211, 211, 211)
+                        .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton21)
+                            .addComponent(jRadioButton19))
+                        .addGap(129, 129, 129)
+                        .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton20)
+                            .addComponent(Correct3))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta3Layout.createSequentialGroup()
+                .addContainerGap(54, Short.MAX_VALUE)
+                .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta3Layout.createSequentialGroup()
+                        .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(Pregunta3Layout.createSequentialGroup()
+                                .addGap(62, 62, 62)
+                                .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 435, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta3Layout.createSequentialGroup()
+                                        .addComponent(Imagen3)
+                                        .addGap(56, 56, 56)))))
+                        .addGap(24, 24, 24))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta3Layout.createSequentialGroup()
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36))))
+        );
+        Pregunta3Layout.setVerticalGroup(
+            Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta3Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Imagen3, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
+                .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton21)
+                    .addComponent(Correct3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton19)
+                    .addComponent(jRadioButton20))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+
+        PanelPrincipal.addTab("Pregunta3", Pregunta3);
+
+        Pregunta4.setBackground(new java.awt.Color(204, 255, 255));
+
+        jButton9.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton9.setText("SIGUIENTE");
+        jButton9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel17.setText(" UNA HORMIGA DEBE SUBIR 95 ESCALONES, PERO CADA HORA, POR CADA 5 ");
+
+        jLabel18.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel18.setText("ESCALONES QUE SUBE BAJA 2. ¿CUANTAS HORAS TARDARA EN SUBIR ");
+
+        jLabel19.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel19.setText("LOS 95 ESCALONES?");
+
+        Imagen4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/hormiga.jpg"))); // NOI18N
+        Imagen4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        Correct4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correct4.setForeground(new java.awt.Color(0, 0, 255));
+        Correct4.setSelected(true);
+        Correct4.setText("A) 31 HORAS");
+        Correct4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Correct4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Correct4ActionPerformed(evt);
+            }
+        });
+
+        jRadioButton22.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton22.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton22.setText("B) 20 HORAS");
+        jRadioButton22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton23.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton23.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton23.setText("C) 38 HORAS");
+        jRadioButton23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton24.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton24.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton24.setText("D) 26 HORAS");
+        jRadioButton24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        javax.swing.GroupLayout Pregunta4Layout = new javax.swing.GroupLayout(Pregunta4);
+        Pregunta4.setLayout(Pregunta4Layout);
+        Pregunta4Layout.setHorizontalGroup(
+            Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta4Layout.createSequentialGroup()
+                .addGroup(Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(Pregunta4Layout.createSequentialGroup()
+                            .addGap(46, 46, 46)
+                            .addComponent(jLabel17))
+                        .addGroup(Pregunta4Layout.createSequentialGroup()
+                            .addGap(141, 141, 141)
+                            .addGroup(Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Correct4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jRadioButton22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGap(135, 135, 135)
+                            .addGroup(Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jRadioButton23)
+                                .addComponent(jRadioButton24)))
+                        .addGroup(Pregunta4Layout.createSequentialGroup()
+                            .addGap(70, 70, 70)
+                            .addComponent(jLabel18))))
+                .addContainerGap(43, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta4Layout.createSequentialGroup()
+                        .addComponent(jLabel19)
+                        .addGap(247, 247, 247))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta4Layout.createSequentialGroup()
+                        .addComponent(Imagen4)
+                        .addGap(257, 257, 257))))
+        );
+        Pregunta4Layout.setVerticalGroup(
+            Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta4Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel17)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel19)
+                .addGap(58, 58, 58)
+                .addComponent(Imagen4, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addGroup(Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Correct4)
+                    .addComponent(jRadioButton23))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton22)
+                    .addComponent(jRadioButton24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(47, Short.MAX_VALUE))
+        );
+
+        PanelPrincipal.addTab("Pregunta4", Pregunta4);
+
+        Pregunta5.setBackground(new java.awt.Color(204, 255, 255));
+
+        jLabel20.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel20.setText("LAS 10Y32\". ¿QUE HORA FUE HACE 10MIN?");
+
+        Imagen5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesJuego/interrogation.png"))); // NOI18N
+        Imagen5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton25.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton25.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton25.setText("A) 10:10 MIN");
+        jRadioButton25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton26.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton26.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton26.setText("B) 09:50 MIN");
+        jRadioButton26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        Correct5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        Correct5.setForeground(new java.awt.Color(0, 0, 255));
+        Correct5.setText("C) 10:07 MIN");
+        Correct5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jRadioButton27.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jRadioButton27.setForeground(new java.awt.Color(0, 0, 255));
+        jRadioButton27.setText("D) 10:00 MIN");
+        jRadioButton27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jButton10.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        jButton10.setText("SIGUIENTE");
+        jButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        jLabel21.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel21.setText("SE LE PREGUNTA LA HORA A UN SEÑOR Y ESTE CONTESTA: \"DENTRO DE 20 MIN. ");
+
+        jLabel22.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel22.setText("SI EL RELOJ ESTA ADELANTADO DE LA HORA REAL 5MIN. Y EL RELOJ MARCARA ");
+
+        javax.swing.GroupLayout Pregunta5Layout = new javax.swing.GroupLayout(Pregunta5);
+        Pregunta5.setLayout(Pregunta5Layout);
+        Pregunta5Layout.setHorizontalGroup(
+            Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta5Layout.createSequentialGroup()
+                .addGroup(Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pregunta5Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel21)))
+                    .addGroup(Pregunta5Layout.createSequentialGroup()
+                        .addGap(166, 166, 166)
+                        .addComponent(jLabel20))
+                    .addGroup(Pregunta5Layout.createSequentialGroup()
+                        .addGap(147, 147, 147)
+                        .addGroup(Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton25)
+                            .addComponent(jRadioButton26))
+                        .addGap(137, 137, 137)
+                        .addGroup(Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton27)
+                            .addComponent(Correct5))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta5Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta5Layout.createSequentialGroup()
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pregunta5Layout.createSequentialGroup()
+                        .addComponent(Imagen5, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(203, 203, 203))))
+        );
+        Pregunta5Layout.setVerticalGroup(
+            Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Pregunta5Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel20)
+                .addGap(29, 29, 29)
+                .addComponent(Imagen5, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addGroup(Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton25)
+                    .addComponent(Correct5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton26)
+                    .addComponent(jRadioButton27))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
+        );
+
+        PanelPrincipal.addTab("Pregunta5", Pregunta5);
+
+        Resultado3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnfinish1.setText("INICIO");
+        btnfinish1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 255)));
+        btnfinish1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnfinish1ActionPerformed(evt);
+            }
+        });
+        Resultado3.add(btnfinish1, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 410, 120, 40));
+
+        lblPuntaje2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblPuntaje2.setForeground(new java.awt.Color(255, 255, 255));
+        lblPuntaje2.setText("SU PUNTAJE ES : ");
+        lblPuntaje2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        lblPuntaje2.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+                lblPuntaje2AncestorMoved(evt);
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        Resultado3.add(lblPuntaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 490, -1));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("RESULTALDOS TERCER NIVEL");
+        jLabel23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Resultado3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, -1, -1));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/preloader.gif"))); // NOI18N
+        Resultado3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 510));
+
+        PanelPrincipal.addTab("tab11", Resultado3);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PanelPrincipal)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PanelPrincipal)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jRadioButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton12ActionPerformed
+
+    private void jRadioButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton11ActionPerformed
+
+    private void Correc4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correc4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correc4ActionPerformed
+
+    private void jRadioButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton10ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       
+if (Correc4.isSelected()) {
+            Variables.preg4 = Variables.preg4 + 1;
+        } else {
+            Variables.preg4 = Variables.preg4 - 0;
+
+        }
+ if (!resul2) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Resultados2);
+            Resultados2.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Resultados2, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+            
+
+        } 
+        Variables.result2=Variables.preg1+Variables.preg2+Variables.preg3+Variables.preg4;
+         lblPuntaje1.setVisible(true);
+           lblPuntaje1.setText("SU PUNTAJE ES :" +Variables.result2);
+           
+           /*setVisible(false);
+        Estadisticas pre= new Estadisticas();
+        pre.setVisible(true);*/
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        
+        if (Correc3.isSelected()) {
+            Variables.preg3 = Variables.preg3 + 1;
+        } else {
+            Variables.preg3 = Variables.preg3 - 0;
+
+        }
+
+        if (!pregu4) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Preg4);
+            Preg4.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Preg4, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }   // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void Correc3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correc3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correc3ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        
+        if (Correc2.isSelected()) {
+            Variables.preg2 = Variables.preg2 + 1;
+        } else {
+            Variables.preg2 = Variables.preg2 - 0;
+
+        }
+
+        if (!pregu3) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Preg3);
+            Preg3.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Preg3, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+
+            // TODO add your handling code here:
+        }     // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void Correc2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correc2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correc2ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+        if (Correc1.isSelected()) {
+            Variables.preg1 = Variables.preg1 + 1;
+        } else {
+            Variables.preg1 = Variables.preg1 - 0;
+
+        }
+
+        if (!pregu2) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Preg2);
+            Preg2.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Preg2, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
+
+    private void Correc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correc1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correc1ActionPerformed
+
+    private void btnfinishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfinishActionPerformed
+
+        if (!resul2) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Pregunta1);
+            Pregunta1.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Pregunta1, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+
+    }//GEN-LAST:event_btnfinishActionPerformed
+    }
+    private void lblPuntaje1AncestorMoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_lblPuntaje1AncestorMoved
+
+                   // TODO add your handling code here:
+    }//GEN-LAST:event_lblPuntaje1AncestorMoved
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        if (Correct1.isSelected()) {
+            Variables.pregun1 = Variables.pregun1 + 1;
+        } else {
+            Variables.pregun1 = Variables.pregun1 - 0;
+
+        }
+
+        if (!pregunta2) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Pregunta2);
+            Pregunta2.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Pregunta2, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+
+        }                          // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jRadioButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton16ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        if (Correct2.isSelected()) {
+            Variables.pregun2 = Variables.pregun2 + 1;
+        } else {
+            Variables.pregun2 = Variables.pregun2 - 0;
+
+        }
+
+        if (!pregunta3) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Pregunta3);
+            Pregunta3.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Pregunta3, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void Correct3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correct3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correct3ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        if (Correct3.isSelected()) {
+            Variables.pregun3 = Variables.pregun3 + 1;
+        } else {
+            Variables.pregun3 = Variables.pregun3 - 0;
+
+        }
+
+        if (!pregunta4) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Pregunta4);
+            Pregunta4.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Pregunta4, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }     // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        if (Correct4.isSelected()) {
+            Variables.pregun4 = Variables.pregun4 + 1;
+        } else {
+            Variables.pregun4 = Variables.pregun4 - 0;
+
+        }
+
+        if (!pregunta5) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Pregunta5);
+            Pregunta5.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Pregunta5, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();}
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void Correct4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correct4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correct4ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        if (Correct5.isSelected()) {
+            Variables.pregun5 = Variables.pregun5 + 1;
+        } else {
+            Variables.pregun5 = Variables.pregun5 - 0;
+
+        }
+       /* setVisible(false);
+        resultado1 nF = new resultado1();
+        nF.setVisible(true);*/
+        if (!resulta1) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Resultado3);
+            Resultado3.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Resultado3, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();}
+             Variables.resulta1=Variables.pregun1+Variables.pregun2+Variables.pregun3+Variables.pregun4;
+         lblPuntaje2.setVisible(true);
+           lblPuntaje2.setText("SU PUNTAJE ES :" +Variables.resulta1);
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void Correct2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correct2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correct2ActionPerformed
+
+    private void Correct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correct1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Correct1ActionPerformed
+
+    private void btnfinish1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfinish1ActionPerformed
+   /* if (!resulta1) {///mirar el error
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Pregunta1);
+            Pregunta1.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Pregunta1, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();} 
+         
+        
+        
+        */
+      // ver dadad
+          //Jm1repository1 jm1repository1= new Jm1repository1();
+           int primerNivel=Variables.Resultado;
+           int segundNivel= Variables.result2;
+           int tercerNivel= Variables.resulta1;
+           
+           Puntajes pj=new Puntajes(primerNivel,segundNivel,tercerNivel);
+           //jm1repository1.gpuntajes(pj);
+           pu.ingresar(primerNivel, segundNivel, tercerNivel);
+   
+   JOptionPane.showMessageDialog(null,"Desea ver los resultados en general por favor vaya a Estadisticas");
+
+        setVisible(false);
+        MainJf nF = new MainJf();
+        nF.setVisible(true); // TODO add your handling code here:
+    }//GEN-LAST:event_btnfinish1ActionPerformed
+
+    private void lblPuntaje2AncestorMoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_lblPuntaje2AncestorMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblPuntaje2AncestorMoved
+
+    private void btnSIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSIActionPerformed
+
+        btnSI.setVisible(false);
+        if (!PrimeraPreguntas) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, PrimeraPregunta);
+            PrimeraPregunta.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(PrimeraPregunta, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }
+    }//GEN-LAST:event_btnSIActionPerformed
+
+    private void BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BActionPerformed
+
+    private void CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+
+        if (A.isSelected()) {
+            Variables.pregunta1 = Variables.pregunta1 + 1;
+        } else {
+            Variables.pregunta1 = Variables.pregunta1 - 0;
+
+        }
+
+        if (!SegundaPreguntas) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, SegundaPregunta);
+            SegundaPregunta.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(SegundaPregunta, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+
+        }
+
+    }//GEN-LAST:event_btnSiguienteActionPerformed
+
+    private void btnSiguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente1ActionPerformed
+
+        if (A1.isSelected()) {
+            Variables.pregunta2 = Variables.pregunta2 + 1;
+        } else {
+            Variables.pregunta2 = Variables.pregunta2 - 0;
+
+        }
+
+        if (!TerceraPreguntas) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, TerceraPregunta);
+            TerceraPregunta.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(TerceraPregunta, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }
+
+    }//GEN-LAST:event_btnSiguiente1ActionPerformed
+
+    private void btnSiguiente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente2ActionPerformed
+
+        if (A2.isSelected()) {
+            Variables.pregunta3 = Variables.pregunta3 + 1;
+        } else {
+            Variables.pregunta3 = Variables.pregunta3 - 0;
+
+        }
+
+        if (!CuartaPreguntas) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, CuartaPregunt);
+            CuartaPregunt.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(CuartaPregunt, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }
+
+    }//GEN-LAST:event_btnSiguiente2ActionPerformed
+
+    private void btnSiguiente3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente3ActionPerformed
+
+        if (D3.isSelected()) {
+            Variables.pregunta4 = Variables.pregunta4 + 1;
+        } else {
+            Variables.pregunta4 = Variables.pregunta4 - 0;
+
+        }
+
+        if (!QuintaPreguntas) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, QuintaPregunt);
+            QuintaPregunt.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(QuintaPregunt, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+        }
+
+    }//GEN-LAST:event_btnSiguiente3ActionPerformed
+
+    private void B4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B4ActionPerformed
+
+    private void C4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C4ActionPerformed
+
+    private void btnSiguiente4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente4ActionPerformed
+
+        if (A.isSelected()) {
+            Variables.pregunta1 = Variables.pregunta1 + 1;
+        } else {
+            Variables.pregunta1 = Variables.pregunta1 - 0;
+
+        }
+
+        if (!Resultado) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Resultado1);
+            Resultado1.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Resultado1, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();
+
+        }
+ Variables.Resultado=Variables.pregunta1+Variables.pregunta2+Variables.pregunta3+Variables.pregunta4+Variables.pregunta5;
+         lblPuntaje.setVisible(true);
+           lblPuntaje.setText("SU PUNTAJE ES :" +Variables.Resultado);
+           
+           
+           
+    }//GEN-LAST:event_btnSiguiente4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+      if (!pregu1) {
+            PanelPrincipal.removeAll();
+            Animacion.mover_derecha(-700, 0, 2, 4, Preg1);
+            Preg1.setLocation(0, 0); // posicion dentro del panel principal
+            PanelPrincipal.add(Preg1, AbsoluteLayout.class);
+            PanelPrincipal.revalidate();
+            PanelPrincipal.repaint();  
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+}
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Preguntas_n2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Preguntas_n2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Preguntas_n2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Preguntas_n2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Preguntas_n2().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton A;
+    private javax.swing.JRadioButton A1;
+    private javax.swing.JRadioButton A2;
+    private javax.swing.JRadioButton A3;
+    private javax.swing.JRadioButton B;
+    private javax.swing.JRadioButton B1;
+    private javax.swing.JRadioButton B2;
+    private javax.swing.JRadioButton B3;
+    private javax.swing.JRadioButton B4;
+    private javax.swing.JPanel Bienvenidos;
+    private javax.swing.JRadioButton C;
+    private javax.swing.JRadioButton C1;
+    private javax.swing.JRadioButton C2;
+    private javax.swing.JRadioButton C3;
+    private javax.swing.JRadioButton C4;
+    private javax.swing.JRadioButton Correc1;
+    private javax.swing.JRadioButton Correc2;
+    private javax.swing.JRadioButton Correc3;
+    private javax.swing.JRadioButton Correc4;
+    private javax.swing.JRadioButton Correct1;
+    private javax.swing.JRadioButton Correct2;
+    private javax.swing.JRadioButton Correct3;
+    private javax.swing.JRadioButton Correct4;
+    private javax.swing.JRadioButton Correct5;
+    private javax.swing.JPanel CuartaPregunt;
+    private javax.swing.JRadioButton D;
+    private javax.swing.JRadioButton D1;
+    private javax.swing.JRadioButton D2;
+    private javax.swing.JRadioButton D3;
+    private javax.swing.JRadioButton D4;
+    private javax.swing.JRadioButton E;
+    private javax.swing.JLabel Image1;
+    private javax.swing.JLabel Image2;
+    private javax.swing.JLabel Image3;
+    private javax.swing.JLabel Image4;
+    private javax.swing.JLabel Imagen1;
+    private javax.swing.JLabel Imagen2;
+    private javax.swing.JLabel Imagen3;
+    private javax.swing.JLabel Imagen4;
+    private javax.swing.JLabel Imagen5;
+    private javax.swing.JPanel PanelBase;
+    private javax.swing.JTabbedPane PanelPrincipal;
+    private javax.swing.JPanel Preg1;
+    private javax.swing.JPanel Preg2;
+    private javax.swing.JPanel Preg3;
+    private javax.swing.JPanel Preg4;
+    private javax.swing.JPanel Pregunta1;
+    private javax.swing.JPanel Pregunta2;
+    private javax.swing.JPanel Pregunta3;
+    private javax.swing.JPanel Pregunta4;
+    private javax.swing.JPanel Pregunta5;
+    private javax.swing.JPanel PrimeraPregunta;
+    private javax.swing.JPanel QuintaPregunt;
+    private javax.swing.JPanel Resultado1;
+    private javax.swing.JPanel Resultado3;
+    private javax.swing.JPanel Resultados2;
+    private javax.swing.JPanel SegundaPregunta;
+    private javax.swing.JPanel TerceraPregunta;
+    private javax.swing.JButton btnSI;
+    private javax.swing.JButton btnSiguiente;
+    private javax.swing.JButton btnSiguiente1;
+    private javax.swing.JButton btnSiguiente2;
+    private javax.swing.JButton btnSiguiente3;
+    private javax.swing.JButton btnSiguiente4;
+    private javax.swing.JButton btnfinish;
+    private javax.swing.JButton btnfinish1;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup10;
+    private javax.swing.ButtonGroup buttonGroup11;
+    private javax.swing.ButtonGroup buttonGroup12;
+    private javax.swing.ButtonGroup buttonGroup13;
+    private javax.swing.ButtonGroup buttonGroup14;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.ButtonGroup buttonGroup4;
+    private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.ButtonGroup buttonGroup6;
+    private javax.swing.ButtonGroup buttonGroup7;
+    private javax.swing.ButtonGroup buttonGroup8;
+    private javax.swing.ButtonGroup buttonGroup9;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton10;
+    private javax.swing.JRadioButton jRadioButton11;
+    private javax.swing.JRadioButton jRadioButton12;
+    private javax.swing.JRadioButton jRadioButton13;
+    private javax.swing.JRadioButton jRadioButton14;
+    private javax.swing.JRadioButton jRadioButton15;
+    private javax.swing.JRadioButton jRadioButton16;
+    private javax.swing.JRadioButton jRadioButton17;
+    private javax.swing.JRadioButton jRadioButton18;
+    private javax.swing.JRadioButton jRadioButton19;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton20;
+    private javax.swing.JRadioButton jRadioButton21;
+    private javax.swing.JRadioButton jRadioButton22;
+    private javax.swing.JRadioButton jRadioButton23;
+    private javax.swing.JRadioButton jRadioButton24;
+    private javax.swing.JRadioButton jRadioButton25;
+    private javax.swing.JRadioButton jRadioButton26;
+    private javax.swing.JRadioButton jRadioButton27;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JRadioButton jRadioButton6;
+    private javax.swing.JRadioButton jRadioButton7;
+    private javax.swing.JRadioButton jRadioButton8;
+    private javax.swing.JRadioButton jRadioButton9;
+    private javax.swing.JLabel lblImagen;
+    private javax.swing.JLabel lblImagen1;
+    private javax.swing.JLabel lblImagen2;
+    private javax.swing.JLabel lblImagen3;
+    private javax.swing.JLabel lblImagen4;
+    private javax.swing.JLabel lblPuntaje;
+    private javax.swing.JLabel lblPuntaje1;
+    private javax.swing.JLabel lblPuntaje2;
+    // End of variables declaration//GEN-END:variables
+}
